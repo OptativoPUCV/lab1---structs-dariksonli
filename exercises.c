@@ -82,10 +82,8 @@ int checkSorted(int arr[], int size)
 {
   int pivIzq = arr[0];
   int i = 1;
-    if(pivIzq <= arr[i]){
-      
-    }
-  
+    //if(pivIzq <= arr[i])
+  return 0;
 }
 
 /*
