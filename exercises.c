@@ -69,7 +69,8 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   int i = 0, k = 0, j = 0;
   while(i < size1 && k < size2)
     {
-      if(arr1[i] == arr2[k]){
+      if(arr1[i] == arr2[k]) //si son iguales los guardo ambos
+      {
         result[j] = arr1[i];
         result[j+1] = arr2[k];
         i++;
@@ -81,7 +82,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
          result[j] = arr1[i];
          j++;
          i++;
-        }else{
+        }else{ //si el del arreglo 2 es menor 
         result[j] = arr2[k];
          j++;
          k++;
@@ -98,10 +99,21 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size)
 {
-  /*int pivIzq = arr[0];
-  int i = 1;
-    if(pivIzq < arr[i])
-  return 0;*/
+  int contAscendente = 0;
+  int contDescendente = 0;
+  for(int i = 0 ; i < size - 1 ; i++){
+    
+    if(arr[i] < arr[i+1]){ //si va creciendo
+        contAscendente++;
+    }else{
+        if(arr[i] > arr[i+1]){
+          contDescendente++;
+        }
+      }
+  }
+  if(contAscendente == 0) return 1;
+  if(contDescendente == 0) return -1;
+  return 0;
 }
 
 /*
