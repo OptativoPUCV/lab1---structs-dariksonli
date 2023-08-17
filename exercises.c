@@ -45,13 +45,16 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   arrLocal = (int *) malloc(sizeof(int) * size);
   if(arrLocal == NULL) exit(EXIT_FAILURE);
 
+  int talla = 0;
+  
   for(int i = 0 ; i < size ; i++){
     if(arr[i] % 2 == 0)
     {
-      arrLocal[(*newSize)] = arr[i];
-      (*newSize)++;
+      arrLocal[talla] = arr[i];
+      talla++;
     }
   }
+  *newSize = talla;
   return arrLocal;
 }
 
@@ -63,13 +66,13 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
-  int i = 0, k = 0;
+  /*int i = 0, k = 0;
   while(i < size1 && k < size2)
     {
        if(arr1[i] < arr2[k]){ //si el del arreglo 1 es menor
          
        }
-    }
+    }*/
 }
 
 /*
@@ -80,10 +83,10 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size)
 {
-  //int pivIzq = arr[0];
-  //int i = 1;
-    //if(pivIzq <= arr[i])
-  return 0;
+  /*int pivIzq = arr[0];
+  int i = 1;
+    if(pivIzq < arr[i])
+  return 0;*/
 }
 
 /*
