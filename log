@@ -223,3 +223,20 @@ Thu 17 Aug 2023 08:27:03 PM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 98ae365
+Thu 17 Aug 2023 08:29:55 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+Thu 17 Aug 2023 08:30:01 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+Thu 17 Aug 2023 08:32:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:51:17: error: ‘talla’ undeclared (first use in this function)
+   51 |       arrLocal[(talla)] = arr[i];
+      |                 ^~~~~
+exercises.c:51:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5840843

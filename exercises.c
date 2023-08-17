@@ -44,11 +44,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   int *arrLocal = NULL;
   arrLocal = (int *) malloc(sizeof(int) * size);
   if(arrLocal == NULL) exit(EXIT_FAILURE);
-  
+
   for(int i = 0 ; i < size ; i++){
     if(arr[i] % 2 == 0)
     {
-      arrLocal[(*newSize)] = arr[i];
+      arrLocal[(talla)] = arr[i];
       (*newSize)++;
     }
   }
