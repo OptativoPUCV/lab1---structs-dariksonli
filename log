@@ -1,1 +1,16 @@
 
+Thu 17 Aug 2023 08:14:30 PM UTC: 
+ exercises.c | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 52 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:10: error: function returns address of local variable [-Werror=return-local-addr]
+   52 |   return arrLocal;
+      |          ^~~~~~~~
+exercises.c: In function ‘checkSorted’:
+exercises.c:86:1: error: control reaches end of non-void function [-Werror=return-type]
+   86 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e9b1f3c

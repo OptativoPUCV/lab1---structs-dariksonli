@@ -9,14 +9,29 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size)
+{
+  int max = arr[0];
+  for(int i = 1 ; i < size ; i++){
+    if(arr[i] > max) max = arr[i];
+  }
+  return max;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size)
+{
+  int k = size - 1;
+  for(int i = 0 ; i < (size/2) ; i++, k--){
+    int temp = arr[i];
+    arr[i] = arr[k];
+    arr[k] = temp;
+  }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -24,7 +39,18 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize)
+{
+  int arrLocal[size];
+  for(int i = 0 ; i < size ; i++){
+    if(arr[i] % 2 == 0)
+    {
+      arrLocal[(*newSize)] = arr[i];
+      (*newSize)++;
+    }
+  }
+  return arrLocal;
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -32,8 +58,16 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+{
+  int i = 0, k = 0;
+  while(i < size1 && k < size2)
+    {
+       if(arr1[i] < arr2[k]){ //si el del arreglo 1 es menor
+         
+       }
+    }
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -41,7 +75,15 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size)
+{
+  int pivIzq = arr[0];
+  int i = 1;
+    if(pivIzq <= arr[i]){
+      
+    }
+  
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -62,8 +104,10 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
+{
+  
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
