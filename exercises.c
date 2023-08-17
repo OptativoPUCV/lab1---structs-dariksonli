@@ -81,11 +81,11 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
         { //si el del arreglo 1 es menor
          result[j] = arr1[i];
          j++;
-         i++;
+         if(i < size1) i++;
         }else{ //si el del arreglo 2 es menor 
         result[j] = arr2[k];
          j++;
-         k++;
+         if(j < size2) j++;
         }
       }
     }
