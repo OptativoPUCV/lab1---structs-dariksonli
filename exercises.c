@@ -80,8 +80,8 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size)
 {
-  int pivIzq = arr[0];
-  int i = 1;
+  //int pivIzq = arr[0];
+  //int i = 1;
     //if(pivIzq <= arr[i])
   return 0;
 }
