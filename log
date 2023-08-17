@@ -82,3 +82,33 @@ exercises.c:53:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 222594c
+Thu 17 Aug 2023 08:17:01 PM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:19: error: expected expression before ‘]’ token
+   52 |   return arrLocal[];
+      |                   ^
+exercises.c:44:7: error: variable ‘arrLocal’ set but not used [-Werror=unused-but-set-variable]
+   44 |   int arrLocal[size];
+      |       ^~~~~~~~
+exercises.c: At top level:
+exercises.c:70:3: error: expected ‘;’ before ‘int’
+   70 | }¨
+      |   ^
+      |   ;
+......
+   78 | int checkSorted(int arr[], int size)
+      | ~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:1: error: control reaches end of non-void function [-Werror=return-type]
+   53 | }
+      | ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:86:1: error: control reaches end of non-void function [-Werror=return-type]
+   86 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+efdf26f

@@ -58,7 +58,7 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-/*void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
   int i = 0, k = 0;
   while(i < size1 && k < size2)
@@ -67,7 +67,7 @@ arreglos en un tercer arreglo también ordenado.
          
        }
     }
-}¨*/
+}¨
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -75,7 +75,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-/*int checkSorted(int arr[], int size)
+int checkSorted(int arr[], int size)
 {
   int pivIzq = arr[0];
   int i = 1;
@@ -83,7 +83,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
       
     }
   
-}*/
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -104,10 +104,10 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-/*void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
 {
   
-}*/
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
@@ -125,4 +125,4 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-//Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
