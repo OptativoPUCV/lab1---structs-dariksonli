@@ -404,3 +404,9 @@ exercises.c:187:26: error: assignment to ‘struct nodo *’ from ‘int’ make
 cc1: all warnings being treated as errors
 Compilation failed
 80b9b1f
+Fri 18 Aug 2023 08:30:56 PM UTC: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  0|1
+total_score: 60/70
+1844882
