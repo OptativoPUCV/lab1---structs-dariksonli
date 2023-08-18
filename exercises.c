@@ -183,7 +183,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
         primero = (Nodo *) malloc(sizeof(Nodo));
         if(primero == NULL) exit(EXIT_FAILURE);
         local = primero;
-      }else{
+      }else
+      {
         local = (Nodo *) malloc(sizeof(Nodo));
         if(local == NULL) exit(EXIT_FAILURE);
         local -> numero = arr[i];
