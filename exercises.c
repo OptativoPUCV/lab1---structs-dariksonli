@@ -180,7 +180,11 @@ Nodo *crearListaEnlazada(int arr[], int size)
       local = (Nodo *) malloc(sizeof(Nodo));
       if(local == NULL) exit(EXIT_FAILURE);
       local -> numero = arr[i];
-      local -> siguiente = local;
+      if(i == size-1 ) {
+        local -> siguiente = NULL;
+        break;
+      }
+      local -> siguiente = arr[i+1];
     }
   
   return local; 

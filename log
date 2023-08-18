@@ -393,3 +393,14 @@ Fri 18 Aug 2023 07:01:39 PM UTC:
  1 file changed, 13 insertions(+), 1 deletion(-)
  tests:  0|0
 c6d31de
+Fri 18 Aug 2023 07:07:56 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:26: error: assignment to ‘struct nodo *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  187 |       local -> siguiente = arr[i+1];
+      |                          ^
+cc1: all warnings being treated as errors
+Compilation failed
+80b9b1f
