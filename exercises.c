@@ -69,33 +69,41 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   int i = 0, k = 0, j = 0;
   while(i < size1 && k < size2)
     {
-      if(arr1[i] < arr2[k])
-      {
+      if(arr1[i] == arr2[k]){
         result[j] = arr1[i];
+        i++;
         j++;
-        if(i < size1) i++;
-        else{
-          while(k < size2){
-            result[j] = arr2[k];
-            k++;
-            j++;
+        result[j] = arr2[k];
+        k++;
+        j++;
+      }else{
+        if(arr1[i] < arr2[k])
+        {
+          result[j] = arr1[i];
+          j++;
+          if(i < size1) i++;
+          else{
+            while(k < size2){
+              result[j] = arr2[k];
+              k++;
+              j++;
+            }
+          }
+        }else{//sino
+          result[j] = arr2[k];
+          j++;
+          if(k < size2) k++;
+          else{
+            while(i < size1){
+              result[j] = arr1[i];
+              i++;
+              j++;
+            }
           }
         }
-      }else{//sino
-        result[j] = arr2[k];
-        j++;
-        if(k < size2) k++;
-        else{
-          while(i < size1){
-            result[j] = arr1[i];
-            i++;
-            j++;
-          }
       }
     }
-  }
 }
-
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,
