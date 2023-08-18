@@ -440,3 +440,8 @@ exercises.c:186:17: error: invalid type argument of ‘->’ (have ‘Nodo’ {a
       |                 ^~
 Compilation failed
 bf9be58
+Fri 18 Aug 2023 08:57:37 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+8593862
