@@ -192,5 +192,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
       }
     }
   
-  return local; 
+  return primero; 
 }
